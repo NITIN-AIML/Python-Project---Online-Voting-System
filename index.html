@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4 text-primary">Welcome to the Election App</h1>
+    <p class="lead text-secondary">Cast your vote securely in a futuristic way!</p>
+    <a href="{{ url_for('register_voter') }}" class="btn btn-primary btn-lg mt-4">Register to Vote</a>
+    <a href="{{ url_for('vote') }}" class="btn btn-success btn-lg mt-4">Cast Your Vote</a>
+    <a href="{{ url_for('results') }}" class="btn btn-warning btn-lg mt-4">View Results</a>
+</div>
+{% endblock %}
